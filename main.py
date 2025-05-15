@@ -27,7 +27,7 @@ def main():
     curses.start_color()
     for i in range(0, img.size[0]):
         for j in range(0, img.size[1]):
-            screen.addstr(j, i, " " if px[i, j] >= 240 else "." if px[i,j] > 227 else ":" if px[i,j] > 199 else ";" if px[i,j] > 171
+            screen.addstr(j, i, " " if px[i, j] >= 220 else "." if px[i,j] > 200 else ":" if px[i,j] > 199 else ";" if px[i,j] > 171
                           else "+" if px[i,j] > 143 else "" if px[i,j] > 115 else "=" if px[i,j] > 87 else "x" if px[i,j] > 59 else "X"
                           if px[i,j] > 31 else "$") #█"
 
